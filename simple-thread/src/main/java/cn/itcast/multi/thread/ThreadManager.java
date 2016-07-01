@@ -53,7 +53,7 @@ public class ThreadManager {
 	    return list.subList(startIndex, endIndex);
 	}
 	
-	public static void BXfunction(Collection<?> paramCollection,final ExectueCallBack ecb){
+	public static void doFunction(Collection<?> paramCollection,final ExectueCallBack ecb){
 	    //构建执行器
 	    ExecutorService executor = createCustomExecutorService(Runtime.getRuntime().availableProcessors(), "batchExecuteProjection");
 	    try {
