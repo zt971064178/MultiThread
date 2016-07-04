@@ -7,7 +7,8 @@ import java.util.concurrent.Exchanger;
 
 public class Producer extends Thread {
 	List<Integer> list = new ArrayList<>();  
-    Exchanger<List<Integer>> exchanger = null;  
+    Exchanger<List<Integer>> exchanger = null; 
+    
     public Producer(Exchanger<List<Integer>> exchanger) {  
         super();  
         this.exchanger = exchanger;  
