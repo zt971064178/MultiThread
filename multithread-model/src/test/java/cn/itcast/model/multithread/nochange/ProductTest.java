@@ -13,5 +13,6 @@ public class ProductTest {
 		Field noField = product.getClass().getDeclaredField("no") ;
 		noField.setAccessible(true);
 		noField.set(product, "45678");
+		System.out.println(product.getNo());
 	}
 }
